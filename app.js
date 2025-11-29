@@ -1,18 +1,43 @@
 const images = [
   {
     imageName: "Brown Bird",
-    imgSrc: "./images/brownbird.JPG",
+    imgSrc: "./images/brownbird.webp",
     alt: "close up of a brown bird sitting on a hedge",
   },
   {
     imageName: "Squirrel",
-    imgSrc: "./images/squirrel.jpg",
+    imgSrc: "./images/squirrel.webp",
     alt: "a grey squirrel eating some bread on a wooden table",
   },
   {
     imageName: "Swallowtail Butterfly",
-    imgSrc: "./images/swallowtailbutterfly.JPG",
+    imgSrc: "./images/swallowtailbutterfly.webp",
     alt: "a swallowtail butterfly landed on a plant",
+  },
+  {
+    imageName: "Crab",
+    imgSrc: "./images/crab.webp",
+    alt: "a crab coming out of its shell on some mossy rocks",
+  },
+  {
+    imageName: "Cyprus Cat",
+    imgSrc: "./images/cypruscat.webp",
+    alt: "a white cat looking sad",
+  },
+  {
+    imageName: "Duck",
+    imgSrc: "./images/duck.webp",
+    alt: "a mallard duck in some water. Its metallic colours shine in the sunlight.",
+  },
+  {
+    imageName: "Highland Cows",
+    imgSrc: "./images/highlandcows.webp",
+    alt: "3 highland cows relaxing and eating grass",
+  },
+  {
+    imageName: "Sheep",
+    imgSrc: "./images/sheep.webp",
+    alt: "a sheep looking directly into the camera",
   },
 ];
 
@@ -35,6 +60,16 @@ function createThumbnails() {
 
 createThumbnails();
 
+function loadMainImg() {
+  let mainImg = document.createElement("img");
+  mainImg.src = images[0].imgSrc;
+  mainImg.alt = images[0].alt;
+  mainImg.className = "main-img";
+  mainImgContainer.appendChild(mainImg);
+}
+
+loadMainImg();
+
 function displayMainImg(currentImage) {
   mainImgContainer.innerHTML = null;
   let mainImg = document.createElement("img");
@@ -43,3 +78,5 @@ function displayMainImg(currentImage) {
   mainImg.className = "main-img";
   mainImgContainer.appendChild(mainImg);
 }
+
+function loadSwitchButtons() {}
