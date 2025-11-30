@@ -2,42 +2,42 @@ const images = [
   {
     imageName: "Brown Bird",
     imgSrc: "./images/brownbird.webp",
-    alt: "close up of a brown bird sitting on a hedge",
+    alt: "a close up of a small brown bird sitting on a hedge",
   },
   {
     imageName: "Squirrel",
     imgSrc: "./images/squirrel.webp",
-    alt: "a grey squirrel eating some bread on a wooden table",
+    alt: "a grey squirrel eating some bread while standing on a wooden table",
   },
   {
     imageName: "Swallowtail Butterfly",
     imgSrc: "./images/swallowtailbutterfly.webp",
-    alt: "a swallowtail butterfly landed on a plant",
+    alt: "a scarce swallowtail butterfly landed on a white flower",
   },
   {
     imageName: "Crab",
     imgSrc: "./images/crab.webp",
-    alt: "a crab coming out of its shell on some mossy rocks",
+    alt: "a hermit crab coming out of its shell on some mossy rocks",
   },
   {
     imageName: "Cyprus Cat",
     imgSrc: "./images/cypruscat.webp",
-    alt: "a white cat looking sad",
+    alt: "a white cat with grey patches looking sad",
   },
   {
     imageName: "Duck",
     imgSrc: "./images/duck.webp",
-    alt: "a mallard duck in some water. Its metallic colours shine in the sunlight.",
+    alt: "a mallard duck on the edge of a lake. Its metallic colours shine in the sunlight.",
   },
   {
     imageName: "Highland Cows",
     imgSrc: "./images/highlandcows.webp",
-    alt: "3 highland cows relaxing and eating grass",
+    alt: "three highland cows lying down and eating grass",
   },
   {
     imageName: "Sheep",
     imgSrc: "./images/sheep.webp",
-    alt: "a sheep looking directly into the camera",
+    alt: "a close up of a sheep looking directly into the camera",
   },
 ];
 
