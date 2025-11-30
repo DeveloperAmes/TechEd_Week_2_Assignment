@@ -51,16 +51,22 @@ function createThumbnails() {
     thumbnail.src = images[i].imgSrc;
     thumbnail.alt = images[i].alt;
     thumbnail.className = "thumbnail-img";
+    thumbnail.tabIndex = images[i];
     thumbContainer.appendChild(thumbnail);
     thumbnail.addEventListener("click", function () {
       displayMainImg(images[i]);
+    });
+    thumbnail.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        displayMainImg(images[i]);
+      }
     });
   }
 }
 
 createThumbnails();
 
-function loadMainImg() {
+function loadInitialImg() {
   let mainImg = document.createElement("img");
   mainImg.src = images[0].imgSrc;
   mainImg.alt = images[0].alt;
@@ -68,7 +74,7 @@ function loadMainImg() {
   mainImgContainer.appendChild(mainImg);
 }
 
-loadMainImg();
+loadInitialImg();
 
 function displayMainImg(currentImage) {
   mainImgContainer.innerHTML = null;
@@ -78,5 +84,3 @@ function displayMainImg(currentImage) {
   mainImg.className = "main-img";
   mainImgContainer.appendChild(mainImg);
 }
-
-function loadSwitchButtons() {}

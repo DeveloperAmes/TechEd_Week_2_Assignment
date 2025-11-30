@@ -9,7 +9,7 @@
 body {
   background-color: black;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 0.2fr 1fr;
   grid-template-rows: 1fr;
 }
 
@@ -26,10 +26,12 @@ body {
 
 .thumbnail-img {
   width: 100%;
-  border: black 3px solid;
+  border: black 2px solid;
+  outline: none;
 }
 
-.thumbnail-img:hover {
+.thumbnail-img:hover,
+.thumbnail-img:focus-visible {
   border: white 2px solid;
 }
 
@@ -40,7 +42,7 @@ body {
 
 .main-img {
   object-fit: cover;
-  height: 100vh;
+  height: 99vh;
   max-width: 100%;
 }
 
